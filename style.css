@@ -1,0 +1,30 @@
+body {
+  font-family: "Verdana", cursive, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+.title {
+  margin: auto;
+}
+
+table {
+  margin: auto;
+  width: auto;
+  max-width: 1000px;
+}
+
+tr {
+  width: auto;
+  max-width: 100%;
+}
+
+td {
+  width: 33.333%
+}
+
+video {
+  width: 100%;
+}
