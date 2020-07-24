@@ -11,7 +11,7 @@ body {
 
 h1 {
   text-align: center;
-  font-size: 6.5vw;
+  font-size: 10vh;
   margin: 0;
 }
 
@@ -37,7 +37,7 @@ tr {
 }
 
 td {
-  width: 33.333%
+  width: 33.333%;
 }
 
 video {
