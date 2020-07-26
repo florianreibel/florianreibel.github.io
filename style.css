@@ -2,7 +2,7 @@ body {
   font-family: "Verdana", cursive, sans-serif;
   margin: auto;
   width: auto;
-  max-width: 1000px;
+  max-width: 1200px;
 }
 
 .title {
@@ -68,8 +68,7 @@ p {
 }
 
 video {
-  width: auto;
-  max-width: 100%;
+  width: 100%;
 }
 
 .iframeContainer {
