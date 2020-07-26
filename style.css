@@ -20,8 +20,9 @@ li {
 
 h1 {
   text-align: center;
-  font-size: 10vh;
+  font-size: 3.5rem;
   margin: 0;
+  border-style: solid;
 }
 
 .text {
@@ -31,7 +32,7 @@ h1 {
 .wrapper-one {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
-  grid-gap: 1rem;
+  grid-gap: 0.5rem;
 }
 
 .elem-one {
@@ -60,6 +61,10 @@ h1 {
   grid-column-end: 7;
   overflow: auto;
   border-radius: 0.5rem;
+}
+
+p {
+  margin: none;
 }
 
 video {
