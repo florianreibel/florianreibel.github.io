@@ -10,7 +10,7 @@ nav {
   padding: 0;
   width: 100%;
   top: 0;
-  background: #cc00ff;
+  background: grey;
   z-index: 1;
   /*linear-gradient(45deg,#6C8ead,#c76d7e,#c4ffb2)*/
 }
@@ -78,13 +78,14 @@ main {
   }
 }
 
-.title {
+.about {
   height: 100vh;
   background-color: cyan;
 }
 
-.title p {
-  margin: 15vw 20vh;
+.about p {
+    text-align: center;
+    font-size: 3rem;
 }
 
 h1 {
