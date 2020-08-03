@@ -6,6 +6,8 @@
   <title>Florian Reibel</title>
   <meta name="description" contet="UXD Student aus Ingolstadt, BY">
   <link rel="stylesheet" href="style.css">
+  <script type="text/javascript" src="navbar.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Mansalva&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -13,7 +15,7 @@
   <header>
 
     <!--main navigation bar-->
-    <nav>
+    <nav id="navbar">
       <ul>
         <div class="logoContainer">
           <a href="/">Florian Reibel</a>
@@ -50,7 +52,7 @@
         <div class="wrapper-one">
 
           <div class="elem-one">
-            <video src="./media/videos/modboxingAthlete.mp4" type="video/mp4" allow="autoplay; loop; muted; playsinline" autoplay loop muted>
+            <video src="./media/videos/modboxingAthlete.mp4" type="video/mp4" autoplay loop muted playsinline preload="auto">
               Your browser does not support the video tag.
             </video>
           </div>
@@ -61,14 +63,14 @@
           </div>
 
           <div class="elem-three">
-            <video src="./media/videos/modboxingTrainer.mp4" type="video/mp4" allow="autoplay; loop; muted; playsinline" autoplay loop muted>
+            <video src="./media/videos/modboxingTrainer.mp4" type="video/mp4" autoplay loop muted playsinline preload="auto">
               Your browser does not support the video tag.
             </video>
           </div>
 
           <div class="elem-four">
             <div class="iframeContainer">
-              <iframe src="https://player.vimeo.com/video/441373758?background=1&autoplay=1&loop=1&byline=0&title=0" allow="autoplay" autoplay loop muted>
+              <iframe loading="lazy" src="https://player.vimeo.com/video/441373758?background=1&autoplay=1&loop=1&byline=0&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -142,7 +144,7 @@
     <!--bottom navigation-->
     <ul>
       <div class="contactContainer">
-        <li>email<a href="mailto:florian.reibel@t-online.de">florian.reibel@t-online.de</a></li>
+        <li><a href="mailto:florian.reibel@t-online.de">florian.reibel@t-online.de</a></li>
         <li><a href="https://www.instagram.com/reibef"><img class="icon" src="./media/icons/instagram.png"></img></a></li>
       </div>
     </ul>
