@@ -151,6 +151,7 @@ video {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
+  border-radius: 0.5rem;
 }
 
 .iframeContainer iframe {
@@ -159,6 +160,7 @@ video {
   height: 100%;
   border: none;
   z-index: -1;
+  border-radius: 0.5rem;
 }
 
 @media (max-width: 768px) {
