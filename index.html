@@ -4,7 +4,7 @@
   <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Florian Reibel</title>
-  <meta name="description" contet="UXD Student aus Ingolstadt, BY">
+  <meta name="description" content="UXD Student aus Ingolstadt, BY">
   <link rel="stylesheet" href="style.css">
   <script type="text/javascript" src="navbar.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
@@ -51,7 +51,7 @@
 
           <div class="elem-one">
             <div class="iframeContainerVert">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445369281?background=1&autoplay=1&mute=1&loop=1&byline=0&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369281?background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -63,14 +63,14 @@
 
           <div class="elem-three">
             <div class="iframeContainerVert">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?background=1&autoplay=1&mute=1&loop=1&byline=0&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
 
           <div class="elem-four">
             <div class="iframeContainerHoriz">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/441373758?background=1&autoplay=1&mute=1&loop=1&byline=0&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/441373758?background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -84,7 +84,7 @@
 
           <div class="elem-one">
             <div class="iframeContainerSqur">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445366431?background=1&autoplay=1&mute=1&loop=1&byline=0&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445366431?background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -153,6 +153,30 @@
     </ul>
 
   </footer>
+
+
+  <script>
+  var prevScrollPos = window.pageYOffset;
+  // hide the navbar in mobile view, when scrolling down
+  window.onscroll = function() {
+    if (window.matchMedia("(max-width: 768px)").matches) {
+      var currentScrollPos = window.pageYOffset;
+      if (prevScrollPos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        // breakpoint for ios safari
+        if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+          if (window.matchMedia("(max-width: 337px)").matches) {
+            document.getElementById("navbar").style.top = "-140px";
+          } else {
+            document.getElementById("navbar").style.top = "-93px";
+          }
+        }
+      }
+      prevScrollPos = currentScrollPos;
+    }
+  }
+  </script>
 
 </body>
 
