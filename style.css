@@ -108,6 +108,7 @@ h1 {
   grid-column-start: 1;
   grid-column-end: 3;
   overflow: auto;
+  z-index: 2;
 }
 
 .elem-two {

@@ -6,8 +6,8 @@
   <title>Florian Reibel</title>
   <meta name="description" content="UXD Student aus Ingolstadt, BY">
   <link rel="stylesheet" href="style.css">
-  <script type="text/javascript" src="navbar.js"></script>
-  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css">
 </head>
 
 <body>
@@ -51,7 +51,7 @@
 
           <div class="elem-one">
             <div class="iframeContainerVert">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445369281?dnt=1&background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" frameborder="0">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369281?dnt=1&background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -63,7 +63,7 @@
 
           <div class="elem-three">
             <div class="iframeContainerVert">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?dnt=1&background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" frameborder="0">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?dnt=1&background=1&autoplay=1&autopause=false&mute=1&loop=1&title=0" allow="autoplay">
               </iframe>
             </div>
           </div>
@@ -177,6 +177,30 @@
       prevScrollPos = currentScrollPos;
     }
   }
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#f1d600"
+      }
+    },
+    "theme": "edgeless",
+    "position": "top",
+    "type": "opt-in",
+    "content": {
+      "message": "Diese Webseite verwendet u.a. Cookies zur optimalen Darstellungen von Inhalten durch das einbinden von Videos über vimeo.com. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
+      "deny": "Ablehnen",
+      "allow": "Akzeptieren",
+      "link": "Datenschutzerklärung",
+      "href": "https://florianreibel.de/policy.html"
+    }
+  });
   </script>
 
 </body>
