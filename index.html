@@ -12,6 +12,35 @@
 
 <body>
 
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+  window.cookieconsent.initialise({
+    "palette": {
+      "popup": {
+        "background": "#000"
+      },
+      "button": {
+        "background": "#f1d600"
+      }
+    },
+    "theme": "edgeless",
+    "position": "bottom",
+    "type": "opt-in",
+    "content": {
+      "message": "Diese Webseite verwendet zur optimalen Darstellungen von Inhalten Cookies von Drittanbietern. Weitere Informationen finden Sie in unserer",
+      "deny": "Ablehnen",
+      "allow": "Akzeptieren",
+      "link": "Datenschutzerklärung",
+      "href": "https://florianreibel.de/policy.html"
+    },
+    revokable:true,
+    onStatusChange: function(status) {
+     console.log(this.hasConsented() ?
+      'enable cookies' : 'disable cookies');
+    }
+  });
+  </script>
+
   <header>
 
     <!--main navigation bar-->
@@ -21,9 +50,9 @@
           <a href="/">Florian Reibel</a>
         </div>
         <div class="navContainer">
-          <li><a href="#about">Über</a></li>
           <li><a href="#projects">Projekte</a></li>
           <li><a href="#skills">Skills</a></li>
+          <li><a href="#about">&Uumlber</a></li>
           <li><a href="#contact">Kontakt</a></li>
         </div>
       </ul>
@@ -34,9 +63,9 @@
 
   <main>
 
-    <!--section about-->
-    <div class="about" id="about">
-      <p>Das Leben ist zu kurz für schlechte UX!</p>
+    <!--section landing-->
+    <div class="landing" id="landing">
+      <p>Das Leben ist zu kurz f&uumlr schlechte UX!</p>
     </div>
 
     <!--section projects-->
@@ -51,7 +80,7 @@
 
           <div class="elem-one">
             <div class="iframeContainerVert">
-              <iframe src="https://player.vimeo.com/video/445369281?dnt=1&background=1&autoplay=1&autopause=false&muted=1&loop=1&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369281?dnt=1&background=1&autoplay=1&autopause=false&muted=1&loop=1&title=0">
               </iframe>
             </div>
           </div>
@@ -63,14 +92,14 @@
 
           <div class="elem-three">
             <div class="iframeContainerVert">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?dnt=1&background=1&autoplay=1&autopause=false&muted=1&loop=1&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445369299?dnt=1&background=1&autoplay=1&autopause=false&muted=1&loop=1&title=0">
               </iframe>
             </div>
           </div>
 
           <div class="elem-four">
             <div class="iframeContainerHoriz">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/441373758?dnt=1&background=1&autoplay=1&autopause=0&muted=1&loop=1&title=0" allow="autoplay">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/441373758?dnt=1&background=1&autoplay=1&autopause=0&muted=1&loop=1&title=0">
               </iframe>
             </div>
           </div>
@@ -80,51 +109,38 @@
       <!--project two-->
       <div class="lamp">
         <h3>LAMPE LUX</h3>
-        <div class="wrapper-one">
+        <div class="wrapper-two">
 
-          <div class="elem-one">
-            <div class="iframeContainerSqur">
-              <iframe loading="lazy" src="https://player.vimeo.com/video/445366431?dnt=1&background=1&autoplay=1&autopause=0&muted=1&loop=1&title=0" allow="autoplay">
-              </iframe>
-            </div>
-          </div>
-
-          <div class="elem-two">
+          <div class="wrapper-two-elem-one">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
           </div>
 
-          <div class="elem-three">
-            <video src="" type="video/mp4" autoplay loop muted playsinline preload="auto">
-              Your browser does not support the video tag.
-            </video>
+          <div class="wrapper-two-elem-two">
+            <div class="iframeContainerSqur">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/445366431?dnt=1&background=1&autoplay=1&autopause=0&muted=1&loop=1&title=0">
+              </iframe>
+            </div>
           </div>
         </div>
       </div>
 
       <!--project three-->
-      <div class="cgi" id ="cgi">
+      <div class="cgi">
         <h3>RAMDOM CGI</h3>
-        <div class="wrapper-one">
+        <div class="wrapper-two">
 
-          <div class="elem-one">
-            <video src="" type="video/mp4" autoplay loop muted playsinline preload="auto">
-              Your browser does not support the video tag.
-            </video>
+          <div class="wrapper-two-elem-one">
+            <div class="iframeContainerSqur">
+              <iframe loading="lazy" src="https://player.vimeo.com/video/449047688?dnt=1&background=1&autoplay=1&autopause=0&muted=1&loop=1&title=0">
+              </iframe>
+            </div>
           </div>
 
-          <div class="elem-two">
+          <div class="wrapper-two-elem-two">
             <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
             </p>
           </div>
-
-          <div class="elem-three">
-            <video src="" type="video/mp4" allow="autoplay; loop; muted" autoplay loop muted playsinline>
-              Your browser does not support the video tag.
-            </video>
-          </div>
-        </div>
-
       </div>
     </div>
 
@@ -133,8 +149,14 @@
       <h2>Skills</h2>
     </div>
 
+    <!--section about-->
+    <div class="about" id="about">
+      <h2>&Uumlber</h2>
+      <p>florianreibel</p>
+    </div>
+
     <!--section contact-->
-    <div class="conntact" id="contact">
+    <div class="contact" id="contact">
       <h2>Kontakt</h2>
     </div>
 
@@ -176,34 +198,10 @@
         }
       }
       prevScrollPos = currentScrollPos;
+    } else {
+      document.getElementById("navbar").style.top = "0";
     }
   }
-  </script>
-
-
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
-  <script>
-  window.cookieconsent.initialise({
-    "palette": {
-      "popup": {
-        "background": "#000"
-      },
-      "button": {
-        "background": "#f1d600"
-      }
-    },
-    "theme": "edgeless",
-    "position": "bottom",
-    "type": "opt-in",
-    "content": {
-      "message": "Diese Webseite verwendet u.a. Cookies zur optimalen Darstellungen von Inhalten durch das einbinden von Videos über vimeo.com. Weitere Informationen finden Sie in unserer Datenschutzerklärung.",
-      "deny": "Ablehnen",
-      "allow": "Akzeptieren",
-      "link": "Datenschutzerklärung",
-      "href": "https://florianreibel.de/policy.html"
-    }
-  });
   </script>
 
 </body>
