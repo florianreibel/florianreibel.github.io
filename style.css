@@ -13,7 +13,7 @@ body {
   background: white;
   z-index: 1;
   transition: top 0.3s;
-  box-shadow: 0px 7px 14px #9a9a9a;
+  /*box-shadow: 0px 4px 8px #9f9f9f;*/
 }
 
 ul {
@@ -74,6 +74,12 @@ main {
   max-width: 1200px;
 }
 
+p {
+  margin: 0;
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
 .landing {
   height: 100vh;
   margin: 0.5rem;
@@ -100,14 +106,12 @@ h1 {
   margin: 0;
 }
 
-.text {
-  vertical-align: top;
-}
-
 .wrapper-one {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
   grid-gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .elem-one {
@@ -227,6 +231,11 @@ iframe {
 
 .imprint, .privacy-policy {
   margin-top: 150px;
+}
+
+#portrait {
+  height: 25vh;
+  border-radius: 12.5vh;
 }
 
 footer {
