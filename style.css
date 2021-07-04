@@ -266,6 +266,9 @@ iframe {
 #portrait {
   height: 25vh;
   border-radius: 12.5vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 footer {
