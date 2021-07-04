@@ -65,10 +65,10 @@ li a {
 }
 
 li a:hover {
-  background-color: cyan;
+  background-color: #FF9A76;
 }
 
-main {
+.content {
   display: block;
   margin: auto;
   max-width: 1200px;
@@ -81,29 +81,46 @@ p {
 }
 
 .landing {
+  background-size: cover;
+  background-position: center;
+  background-color: #1a1a1a;
   height: 100vh;
-  margin: 0.5rem;
-  /*background: linear-gradient(135deg,#0F2027,#203A43,#2C5364);
-  color: white;*/
+  width: 100%;
+  overflow: hidden;
+}
+
+.landing video {
+  height: 100vh;
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+  z-index: 0;
 }
 
 .landing p {
-  position: relative;
+  position: absolute;
   float: left;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 3rem;
+  color: white;
+  z-index: 5;
 }
 
 .projects, .skills, .about, .contact {
   margin: 0.5rem;
 }
 
-h1 {
-  text-align: center;
-  font-size: 3rem;
-  margin: 0;
+.text {
+  column-count: 2;
+}
+
+.modboxing, .lamp {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .wrapper-one {
@@ -142,6 +159,8 @@ h1 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 0.5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .wrapper-two-elem-one {
@@ -176,6 +195,7 @@ h1 {
   height: 0;
   padding-bottom: 56.25%;
   position: relative;
+  overflow: hidden;
 }
 
 .iframeContainerSqur {
@@ -183,6 +203,7 @@ h1 {
   height: 0;
   padding-bottom: 100%;
   position: relative;
+  overflow: hidden;
 }
 
 iframe {
@@ -190,10 +211,19 @@ iframe {
   width: 100%;
   height: 100%;
   border: none;
-  /*z-index: -1;*/
 }
 
+/*.landing iframe {
+  height: 100%;
+  min-width: 100%;
+  overflow: hidden;
+}*/
+
 @media (max-width: 768px) {
+
+  .text {
+    column-count: 1;
+  }
 
   .elem-one {
     grid-row-start: 2;
